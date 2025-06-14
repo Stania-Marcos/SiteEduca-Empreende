@@ -10,7 +10,7 @@ dotenv.config({ path: path.resolve(__dirname, "../.env") });
 // Lê e destrutura a URL
 console.log("DB_URL:", process.env.DB_URL); // ✅ ADICIONE ISSO
 
-const dbUrl = process.env.DB_URL;
+const dbUrl = process.env.DB_URL?.trim();
 const parsed = new URL(dbUrl); 
 // Pega os dados da URL
 const host = parsed.hostname;
