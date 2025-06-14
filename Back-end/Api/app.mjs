@@ -27,32 +27,9 @@ const __dirname = path.dirname(__filename);
 // Servir o front-end
 app.use(express.static(path.join(__dirname, "../../Front-End")));
 
-app.get('/Main2.html', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../Front-End/Html/Main2.html'));
-});
+
 app.get('/Main.html', (req, res) => {
   res.sendFile(path.join(__dirname, '../../Front-End/Html/Main.html'));
-});
-app.get('/Admin.html', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../Front-End/Html/Admin.html'));
-});
-app.get('/blog.html', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../Front-End/Html/blog.html'));
-});
-app.get('/diagnosticoEmpresarial.html', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../Front-End/Html/diagnosticoEmpresarial.html'));
-});
-app.get('/InformacoesBlog.html', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../Front-End/Html/InformacoesBlog.html'));
-});
-app.get('/index.html', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../Front-End/Html/index.html'));
-});
-app.get('/servicos.html', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../Front-End/Html/servicos.html'));
-});
-app.get('/confirmarEmail.html', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../Front-End/Html/confirmarEmail.html'));
 });
 
 const paginas = [
