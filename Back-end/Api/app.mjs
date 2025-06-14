@@ -8,6 +8,7 @@ import { fileURLToPath } from "url";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import userRoutes from "./routes/userRoutes.mjs";
+import uploads from "./Config/multer.mjs";
 import conexao from "./Config/server.mjs";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
